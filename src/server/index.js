@@ -19,8 +19,7 @@ app.use(express.static('dist'));
 
 
 app.get('/', function (req, res) {
-    // res.sendFile('dist/index.html');
-    res.sendFile(path.resolve("../client/views/index/html"));
+  res.sendFile('dist/index.html');
 });
 
 app.post('/test', async (req, res, next) => {
