@@ -1,0 +1,36 @@
+@import "variables.scss";
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 70px;
+    align-items: center;
+    padding: 0 20px;
+    background-color: $main-color;
+    color: white;
+
+
+    .copyright {
+        width: 50%;
+        font-size: 15px;
+    }
+    .socials {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+
+        a {
+            text-transform: none;
+            color: inherit;
+
+            &:hover {
+                color: $secondary-color;
+                transition: 0.5s all;
+            }
+        }
+
+        i {
+            padding: 0 20px;
+        }
+    }
+}

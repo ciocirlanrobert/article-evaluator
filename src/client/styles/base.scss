@@ -1,0 +1,18 @@
+@import "variables.scss";
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-size: $main-font;
+    font-family: $font;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex: 2;
+    margin-top: 30px;
+}

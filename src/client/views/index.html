@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>News Evaluator with NLP</title>
+    </head>
+    <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css
+    ">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+    <body>
+
+        <header>
+            <div class="title">News Evaluator with NLP</div>
+        </header>
+
+        <main>
+            <form action="" class="form" onsubmit="return Client.handleSubmit(event)">
+                <input type="text" id="article" name="article" placeholder="Insert article here">
+                <input type="submit" value= "Submit" id="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+            </footer>
+            <div class="results">
+                <h2>Article</h2>
+                <div id="result-article"></div>
+                <h2>Polarity</h2>
+                <div id="polarity"></div>
+                <h2>Subjectivity</h2>
+                <div id="subjectivity"></div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="copyright">Copyright © Ciocirlan Robert 2020</div>
+            <div class="socials">
+                <a href="http://www.linkedin.com/in/ciocirlanrobert"><i class="im im-linkedin"></i></a>
+                <a href="https://github.com/ciocirlanrobert"><i class="im im-github"></i></a>
+            </div>
+        </footer>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>
